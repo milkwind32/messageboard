@@ -14,7 +14,7 @@ class TestController extends Controller
         $post = $request->except('_token');
         $result = $post;
         $response['status'] = 200;
-        $response['msg'] = '請求大成功';
+        $response['msg'] = '請求成功';
         $response['data'] = $result;
         return response($response);
     }

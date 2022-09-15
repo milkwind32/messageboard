@@ -21,8 +21,7 @@
         $.post(url,formData,function (response) {
             let responseData = response.data;
             let appendStr = '<span style="border: 1px solid blue">'+responseData.text+ response.msg +'</span>';
-            $('.response-message').empty().append(appendStr);
-        
+            $('.response-message').empty().append(appendStr);      
         })
     })
 </script>
